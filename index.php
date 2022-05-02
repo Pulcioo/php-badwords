@@ -20,6 +20,10 @@
 
     $testo = 'Il mio primo approccio con il back-end!';
 
+    $parolaDaCensurare = $_GET['badword'];
+
+    $testoCensurato = str_replace($parolaDaCensurare, '***', $testo);
+
     ?>
 
     <!-- frase e lunghezza iniziali -->
@@ -31,6 +35,17 @@
     </p>
     <p>
         La sua lunghezza è: <?php echo strlen($testo) ?>
+    </p>
+
+    <!-- frase e lunghezza modificati -->
+    <h1>Frase modificata: </h1>
+    <p>
+        <b>
+            <?php echo $testoCensurato ?>
+        </b>
+    </p>
+    <p>
+        La sua lunghezza è: <?php echo strlen($testoCensurato) ?>
     </p>
 
 </body>
