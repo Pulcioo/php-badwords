@@ -27,7 +27,7 @@
     ?>
 
     <!-- frase e lunghezza iniziali -->
-    <h1>Frase iniziale: </h1>
+    <h2>Frase iniziale: </h2>
     <p>
         <b>
             <?php echo $testo ?>
@@ -38,7 +38,7 @@
     </p>
 
     <!-- frase e lunghezza modificati -->
-    <h1>Frase modificata: </h1>
+    <h2>Frase modificata: </h2>
     <p>
         <b>
             <?php echo $testoCensurato ?>
